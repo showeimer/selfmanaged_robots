@@ -1,14 +1,13 @@
-# user_directory_mongodb
-
-In week 1 of Back-End Fundamentals, you built a directory site with job and skill information for robots.
-
-Today, you should download the same data you used in that project.
-
-Load this data into MongoDB and rebuild the directory site. You will have to query the database via the MongoDB library (mongodb) to get this data.
-
-This time, add links at the top of the page to go to a page of robots that are currently looking for work and a page of robots that are currently employed.
-
-Hard mode  
-
-If you are up to it, make countries and skills into links that will take you to a page that only shows robots from that country or have that skill.
 # selfmanaged_robots
+
+The robot assignment today is another train wreck. Here is what I would like to see as a successful assignment: Be able to create a new robot through a sign up form, add that new robot to the existing database of robots, and have that robot populate to the robot page. Use password hashing and authentication. THEN, be able to edit the robot that you created.
+
+TLDR: Don’t worry about the already existing robots that are in the database because it seems pointless to either manually give them passwords (the defeats the purpose of password hashing) or recreate the database just for fun-sies. For the images, just use any images or repeat the robot urls in the data.JS file. (edited)
+
+
+How to retrieve MongoDB database:
+
+mongoimport --db newdb --collection userdirectories --out userdirectories.json
+
+
+
